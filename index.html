@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-br">
+	<link rel="icon" href="assets/favicon.png">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<meta name="author" content="João Augusto Vargas">
+    <meta name="description" content="Sociedade volume 1 por João A. Vargas aborda uma nova e aterrorizante perspectiva ao terror psicológico. Reconhecida pela sua abordagem humana e realista, Sociedade se tornou um reconhecido lançamento da Editora Viseu..">
+    <meta name="robots" content="index, follow">
+
+	<title>SOCIEDADE</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.main-contente {
+			margin-top: 50px;
+			margin-left: 50px;
+			z-index: 999;
+			position: fixed;
+			color: white;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main-contente h1 {
+			box-shadow: inset 0px 0px 20px 20px #000000;
+			font-size: 3vh;
+		}
+
+		.btn {
+			font-size: 2.8vh;
+			display: flex;
+			justify-content: center;
+			border-radius: 20rem;
+			margin-top: 2vh;
+		}
+
+		.socialLink {
+			
+			z-index: 999;
+			position: fixed;
+			margin: auto;
+			margin-right: 50px;
+			margin-bottom: 50px;
+			bottom: 0;
+			right: 0;
+			display: flex;
+			box-shadow: inset 0px 0px 20px 20px #00000060;
+			align-content: space-around;
+			/* width: 30%; */
+			justify-content: space-between;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			height: 51%;
+			align-items: center;
+
+
+		}
+
+
+		.socialLink i {
+			font-size: 8vh;
+			color: red;
+		}
+
+		.socialLink img {
+			background: red;
+			border-radius: 2.1vh;
+			width: 8vh;
+		}
+
+		.socialLink img:hover {
+			background-color: white;
+			transform: scale(1.2);
+			transition: .1s;
+		}
+
+		.socialLink i:hover {
+			color: white;
+			transform: scale(1.2);
+			transition: .1s;
+		}
+
+		.bxs-book-open {
+			font-size: 2.0rem;
+			color: var(--texto-color);
+			margin-left: 3rem;
+		}
+
+		.bx-question-mark {
+			animation: skew 1.5s infinite;
+		}
+
+		.sociedade {
+
+			height: 8vh;
+			box-shadow: inset 0px 0px 20px 20px #000000;
+			display: flex;
+		}
+
+		.header-3d {
+			display: flex;
+
+		}
+
+
+		@media (max-width: 376px) {
+
+			.main-contente h1 {
+				font-size: 55px;
+			}
+
+			.sociedade {
+				height: 147px;
+				width: auto;
+			}
+
+			.btn {
+				font-size: 51px;
+			}
+
+		}
+
+		@media (max-width: 301px) {
+
+			.btn {
+				font-size: 9999px;
+			}
+		}
+
+
+		
+	</style>
+	<script type="module" crossorigin src="assets/index-DA-5W_eV.js"></script>
+
+
+</head>
+
+
+
+
+<body onload="setTimeout(onLoadPage, 1500);"></body>
+<div class="loadPage">
+	<img id="loadingGif" src="" alt="">
+	<h1 class="loading-text">Loading</h1>
+	
+</div>
+<header class="header-3d">
+	<div class="main-contente">
+		<h1>Veja sobre </h1>
+		<img class="sociedade" src="assets/sociedade.png">
+		<a class="btn powerglitch" href="./site.html">Veja mais!</a>
+	</div>
+
+	<div class="socialLink">
+		<a href="https://www.instagram.com/joaoa_vargas/" target="_blank"><i class='bx bxl-amazon powerglitch'></i></a>
+		<a href="https://www.amazon.com.br/stores/page/31EE7129-8565-448C-A627-918566CE2F4B/search?terms=sociedade" target="_blank"> <img class='bx bx-viseu powerglitch' src="assets/viseuNaofundo-DQpN_5Q3.svg" alt=""></a>
+		<a href="https://www.instagram.com/joaoa_vargas/" target="_blank"><i class='bx bxl-instagram-alt powerglitch'></i></a>
+		<i class='bx bxl-twitter powerglitch'></i>
+		<a  href="noface.html" target="_blank"><i class='bx bx-question-mark powerglitch' ></i></a>
+
+	</div>
+</header>
+<script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+<script>
+
+
+	PowerGlitch.glitch(
+		'.powerglitch',
+		{
+			"playMode": "hover",
+			"createContainers": true,
+			"hideOverflow": false,
+			"timing": {
+				"duration": 250,
+				"iterations": 1
+			},
+			"glitchTimeSpan": {
+				"start": 0,
+				"end": 1
+			},
+			"shake": {
+				"velocity": 30,
+				"amplitudeX": 0.22,
+				"amplitudeY": 0.26
+			},
+			"slice": {
+				"count": 6,
+				"velocity": 10,
+				"minHeight": 0.02,
+				"maxHeight": 0.17,
+				"hueRotate": true
+			},
+			"pulse": false
+		}
+	)
+</script>
+
+
+<script>
+	const loadPage = document.querySelector('.loadPage');
+	const socialLink = document.querySelector('.socialLink');
+	socialLink.style.position = 'relative';
+	document.addEventListener('DOMContentLoaded', (event) => {
+    const gifs = [
+        'img/loading-sociedade1.gif',
+        'img/loading-sociedade2.gif',
+        'img/loading-sociedade3.gif',
+		'img/loading-sociedade4.gif',
+    ];
+
+    const randomIndex = Math.floor(Math.random() * gifs.length);
+	
+
+	if (Math.floor(Math.random() * (2626- 1 + 1)) + 1 == 2626){
+		const selectedGif = "img/loading-sociedade-extra.gif";
+		document.getElementById('loadingGif').src = selectedGif;
+	}else{
+		const selectedGif = gifs[randomIndex];
+		document.getElementById('loadingGif').src = selectedGif;
+	}
+    
+    
+});
+	function onLoadPage() {
+		loadPage.style.display = 'none';
+		socialLink.style.position = 'fixed';
+	}
+</script>
+</body>
+
+</html>
