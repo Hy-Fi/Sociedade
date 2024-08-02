@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌷</title>
+    <title>⧫</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,6 +24,9 @@
 </script>
     <style>
 
+html{
+    overflow-y: auto;
+}
 
 
         main {
@@ -158,11 +161,23 @@
     top: 0;
         }
 
-        @media (max-width: 601px) {
+@media (max-width: 601px) {
 
 .wires2 {
     display: none;
 }
+
+
+}
+
+@media (max-width: 751px) {
+
+#r-container iframe{
+    width: 80vw;
+    margin-bottom: 20px;
+    height: auto;
+}
+
 }
 
 form{
@@ -179,13 +194,23 @@ form{
     font-size: 2.2rem;
 }
 
+
+#r-container iframe{
+   
+    margin-bottom: 50px;
+    
+}
+
+
+
+
     </style>
 </head>
 
 <body>
 
     <div class="main-contente">
-		<img class="sociedade" src="assets/sociedade.png">
+		<img class="sociedade" src="assets/sociedade.png" alt="">
 		<a class="btn powerglitch" href="index.html">Voltar</a>
 	</div>
 
@@ -193,13 +218,15 @@ form{
     <img class="wires2"  src="img/wires2.png" alt="">
 
     <main class="container">
+        <div class="spacer"></div>
         <form id="formText" action="submit">
-        <label for="secret">"e no fim, apenas uma existiu"</label>
+        <label for="secret">"2 3 5 6 7 8 10 12 14"</label>
         <input class="secret" type="text" id="secret" maxlength="99" minlength="1" required=""
             placeholder="Digite a resposta aqui">
             <button class="btn powerglitch btnSec" id="btnEnv">Enviar</button>
         </form>
         <h2 id="response"></h2>
+        <div id="r-container"></div>
     </main>
     
 
